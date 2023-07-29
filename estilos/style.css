@@ -23,23 +23,14 @@ body{
     width: 100vw;
     height: 100vh;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
 }
 
 main{
-    max-width: 320px;
-    background-color: var(--White);
-    text-align: center;
-    border-radius: 18px;
-}
-
-main > img{
-    max-width: 90%;
-    height: auto;
-    padding: 14px;
-    border-radius: 25px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 p {
@@ -54,3 +45,20 @@ h1 {
     color: var(--Dark-blue);
     padding: 0 25px 20px 25px;
 }
+
+.container{
+    max-width: 320px;
+    background-color: var(--White);
+    text-align: center;
+    border-radius: 18px;
+}
+
+div.container > img{
+    max-width: 90%;
+    height: auto;
+    padding: 14px;
+    border-radius: 25px;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
